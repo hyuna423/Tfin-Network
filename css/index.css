@@ -37,3 +37,271 @@ h3 {
 
 
 /*헤더*/
+
+
+
+/* roadmap */
+#roadmap{
+  width: 100%;
+  padding: 150px 0;
+  text-align: center;
+  position: relative;
+}
+
+#roadmap .roadmap_bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+#roadmap .roadmap_bg::before {
+  content: '';
+  background: url(../img/roadmap_bg.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -5;
+}
+#roadmap .roadmap_bg::after {
+  content: '';
+  background: url(../img/bgefect.png) no-repeat;
+  width: 40%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 5;
+}
+
+#roadmap .roadmap_wrap{
+  width: 100%;
+}
+#roadmap .roadmap_wrap .roadmap_box{
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#roadmap .roadmap_wrap .roadmap_box .rdm_box {
+  width: 30%;
+  margin-top: 2%;
+}
+#roadmap .roadmap_wrap .roadmap_box .rdm_box h4 {
+    width: 40%;
+    height: 10%;
+    font-weight: 600;
+    font-size: 2em;
+    background: linear-gradient(119.05deg, #AE8EF5 12.64%, rgba(174, 142, 245, 0) 141.36%);
+    border-radius: 30px;
+    box-shadow: rgb(0 0 0 / 15%) 2.4px 2.4px 3.2px;
+    text-align: center;
+    margin: auto;
+
+    margin-bottom: 8%;
+}
+#roadmap .roadmap_wrap .roadmap_box .rdm_box .rdm_card{
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  margin-top: 3%;
+  text-align: left;
+
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 5px 20px 33px rgba(137, 139, 198, 0.7);
+  backdrop-filter: blur(7.5px);
+}
+#roadmap .roadmap_wrap .roadmap_box .rdm_box p{
+  padding: 2% 0;
+  color: #333;
+}
+
+
+
+
+
+/* contact */
+#contact {
+  background: linear-gradient(72.44deg, rgba(244, 93, 163, 0.6) 0%, rgba(201, 78, 235, 0.6) 22.92%, rgba(167, 88, 255, 0.6) 44.79%, rgba(62, 154, 236, 0.6) 77.6%, rgba(103, 252, 157, 0.6) 98.96%);
+  padding: 130px 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#contact .con_area {
+  position: relative;
+  background-color: #fff;
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+  border-radius: 20px;
+}
+
+#contact .con_area .con_left {
+  width: 50%;
+  padding: 0 7%;
+}
+
+#contact .con_area .con_left h3 {
+  position: relative;
+}
+
+#contact .con_area .con_left h3::after {
+  content: "";
+  background-color: #636363;
+  width: 125px;
+  height: 4px;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  border-radius: 50px;
+}
+
+#contact .con_area .con_left .gform {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#contact .con_area .con_left form input.email::placeholder,
+#contact .con_area .con_left form textarea#message::placeholder {
+  color: #4E4A4A;
+  border: none;
+}
+#contact .con_area .con_left form input.email,
+#contact .con_area .con_left form textarea {
+  width: 100%;
+  background-color: #F2F2F2;
+  padding: 2%;
+  border: none;
+}
+#contact .con_area .con_left form textarea#message {
+  padding: 0 0 40% 0;
+}
+
+#contact .con_area .con_left form input.email {
+  margin-bottom: 20px;
+}
+
+#contact .con_area .con_left form input.send {
+  width: 100%;
+  padding: 12px;
+  background-color: #AE8EF5;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  transition: all 0.6s ease-in-out;
+  display: block;
+  margin-top: 20px;
+  
+  transition-duration: 0.5s;
+}
+
+#contact .con_area .con_left form input.send:hover {
+  background-color: #6434cc;
+}
+
+/* 우측 이미지 */
+#contact .con_area .con_right {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+#contact .con_area .con_right::before {
+  content: '';
+  background: url(../img/email_bg.png)no-repeat center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#contact .con_area .con_right img {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  padding: 80px;
+  margin: 0 auto;
+}
+
+/* footer */
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #222222;
+  padding: 50px 0;
+  color: #fff;
+  justify-content: space-between
+}
+
+footer .footer_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_area h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* white_pp */
+footer .footer_area .white_pp {
+  width: 50%;
+}
+footer .footer_area .white_pp button {
+  width: fit-content;
+}
+footer .footer_area .white_pp:nth-child(2) button {
+  margin-right: 10px;
+}
+footer .footer_area .white_pp button {
+  background: none;
+  border: none;
+}
+footer .footer_area .white_pp button a i {
+  position: relative;
+}
+.xi-file-upload:before {
+  content: "\ea9e";
+}
+footer .footer_area .white_pp button a i::after {
+  content: "Ko.ver";
+  width: 37px;
+  height: 15px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  font-size: 8px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 10px;
+  color: #222222;
+}
+footer .footer_area .white_pp button.eng a i::after {
+  content: "En.ver";
+}
+footer .footer_area .white_pp i {
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+footer .footer_area .footer_info_list {
+  width: 17%;
+  position: relative;
+  z-index: 2;
+}
+footer .footer_area .footer_info_list .info_list_content {
+  margin-bottom: 10%;
+}
