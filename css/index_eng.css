@@ -50,9 +50,21 @@ address {
 
 /*모바일3 갤럭시*/
 
-@media screen and (max-width:425px) {}
+@media screen and (max-width:425px) {
+    #home .main_area .down_area {
+        bottom: -5%;
+    }
+}
 
 
 
 /*모바일4 아이폰*/
-@media screen and (max-width:375px) {}
+@media screen and (max-width:375px) {
+    #home .main_area .main_txt b {
+        font-size: 1.2rem;
+    }
+    #home .main_area .down_area {
+        bottom: -10%;
+    }
+    
+}

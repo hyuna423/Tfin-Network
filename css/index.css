@@ -37,3 +37,401 @@ h3 {
 
 
 /*헤더*/
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+header .hd_all {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100px;
+  align-items: center;
+}
+header hgroup h1 img {
+  max-width: 90%;
+}
+header .hd_all .pc_wrap {
+  width: 100%;
+}
+header .hd_all .pc_wrap ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  float: right;
+  width: 65%;
+}
+header .hd_all .pc_wrap ul li a {
+  color: #222;
+  font-size: 1.5rem;
+}
+
+
+.hd_all .pc_wrap ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 5% 0;
+  color: #222;
+  position: relative;
+}
+.hd_all .pc_wrap ul li a::before,
+.hd_all .pc_wrap ul li a::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  margin: auto;
+}
+.hd_all .pc_wrap ul li a::after {
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+  width: 0;
+  top: 0;
+  left: 50%;
+  transition: all 0.2s ease;
+}
+.hd_all .pc_wrap ul li a:hover::before {
+  height: 0;
+  top: 50%;
+}
+.hd_all .pc_wrap ul li a:hover::after {
+  width: calc(100% + 4px);
+  left: -2px;
+}
+.hd_all .pc_wrap ul li:last-child a:hover::before,
+.hd_all .pc_wrap ul li:last-child a:hover::after {
+  display: none;
+}
+
+header .hd_all .pc_wrap ul li.lan {
+  background: linear-gradient(to right, #F45DA3, #C94EEB, #A758FF, #3E9AEC);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  background-size: 200% 100%;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  display: flex;
+  border-radius: 30px;
+  max-width: 140px;
+  transition: all .3s;
+}
+header .hd_all .pc_wrap ul li.lan a {
+  color: #fff;
+  padding: 10px 20px;
+}
+header .hd_all .pc_wrap ul li.lan:hover {
+  background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+header .hd_all .pc_wrap ul li.lan img {
+  max-width: 25px;
+  margin-top: -5px;
+}
+
+/* 반응형 */
+
+.hd_all .menu-btn {
+  line-height: 100px;
+  display: none;
+}
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background: rgba(48, 48, 48, 0.87);
+  transition: all 0.6s ease-in-out;
+}
+#active:checked~.wrapper {
+  right: 0;
+  overflow: hidden;
+}
+.menu-btn {
+  position: absolute;
+  z-index: 2;
+  right: 5%;
+  top: 35px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn span,
+.menu-btn:before,
+.menu-btn:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 12%;
+  width: 75%;
+  border-bottom: 3px solid #F45DA3;
+  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-btn:before {
+  transform: translateY(-8px);
+}
+.menu-btn:after {
+  transform: translateY(8px);
+}
+.close {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: background .6s;
+  display: none;
+}
+
+/* closing animation */
+#active:checked+.menu-btn span {
+  transform: scaleX(0);
+}
+
+#active:checked+.menu-btn:before {
+  transform: rotate(45deg);
+  border-color: #fff;
+}
+
+#active:checked+.menu-btn:after {
+  transform: rotate(-45deg);
+  border-color: #fff;
+}
+
+.wrapper ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+}
+.wrapper ul li {
+  height: 7%;
+  margin: 32px auto;
+  text-align: center;
+  width: 100%;
+}
+.wrapper ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transform: translateY(-50%);
+  line-height: 3;
+  margin: 5px auto;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  text-align: center;
+  max-width: 100%;
+  position: relative;
+}
+.wrapper ul li a:after {
+  position: absolute;
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after {
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover {
+  color: #F45DA3;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+.content .title {
+  font-size: 40px;
+  font-weight: 700;
+}
+.content p {
+  font-size: 35px;
+  font-weight: 600;
+}
+#active:checked~.wrapper ul li a {
+  opacity: 1;
+  transition: all 0.3s ease;
+  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.wrapper ul li a {
+  transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateX(100px);
+}
+#active:checked~.wrapper ul li a.lan::after {
+  display: none;
+}
+#active:checked~.wrapper ul li a {
+  transform: none;
+  transition-timing-function: ease, cubic-bezier(.1, 1.3, .3, 1);
+  transition-delay: .6s;
+  transform: translateX(-100px);
+}
+.hd_all .wrapper ul li:last-child a img{
+  max-width: 30px;
+}
+
+/* home */
+
+#home {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+#home .main_vid {
+  height: 100%;
+  width: 100%;
+}
+#home .main_vid video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#home .main_area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #222;
+  padding-top: 2%;
+}
+#home .main_area h2 {
+  font-size: 5rem;
+  padding-bottom: 2%;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(41, 41, 41);
+}
+#home .main_area .main_txt b {
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgb(41, 41, 41);
+}
+#home .main_area .main_txt p {
+  margin-top: 2%;
+  font-weight: bold;
+}
+#home .main_area .main_txt p .hide {
+  display: none;
+}
+
+#home .main_area .down_area {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  
+}
+#home .main_area .down_area button {
+  width: 40%;
+  padding: 20px 0;
+  background: linear-gradient(to right, #F45DA3, #C94EEB, #A758FF, #3E9AEC);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  border-radius: 10px;
+  border: none;
+  background-size: 300% 100%;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+#home .main_area .down_area button:hover {
+  background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+#home .main_area .down_area button  a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* about */
+#about {
+  width: 100%;
+  padding: 120px 0 100px;
+  position: relative;
+}
+#about::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -15%;
+  top: 5%;
+  background: url("../img/bgefect.png")no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+#about::after{
+  content: "";
+  width: 80%;
+  height: 30%;
+  position: absolute;
+  right: 0;
+  top: 36px;
+  background: url("../img/TFIN\ NETWORK_bg.png")no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+#about .about_wrap {
+  width: 100%;
+}
+#about .about_wrap .about_contents_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#about .about_wrap .about_contents_wrap .about_cont_left {
+  width: 50%;
+  margin-top: 10%;
+}
+#about .about_wrap .about_contents_wrap .about_cont_right {
+  width: 50%;
+}
+#about .about_wrap .about_contents_wrap .about_cont_right img {
+  width: 100%;
+}

@@ -1,18 +1,82 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+  header .hd_all .pc_wrap ul {
+    width: 75%;
+  }
+  header .hd_all .pc_wrap ul li.lan a {
+    padding: 5px 15px;
+  }
+  #home .main_area {
+    width: 80%;
+    top: 45%;
+  }
+  #home .main_area .down_area {
+    width: 80%;
+    margin-left: 2%;
+  }
+
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    header .hd_all .pc_wrap ul {
+      width: 95%;
+    }
+    #home .main_vid video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      width: auto;
+      transform: translate(-50%, -50%);
+    }
+    #home .main_area {
+      width: 90%;
+      top: 50%;
+    }
+    #home .main_area .down_area {
+      bottom: 10%;
+    }
+    #about .about_wrap .about_contents_wrap {
+      display: block;
+    }
+    #about .about_wrap .about_contents_wrap .about_cont_left {
+      width: 100%;
+      text-align: center;
+    }
+    #about .about_wrap .about_contents_wrap .about_cont_right {
+      width: 100%;
+    }
+    #about .about_wrap .about_contents_wrap .about_cont_right img {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 10%;
+    }
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    nav.pc_wrap {
+      display: none;
+    }
+    .hd_all .menu-btn {
+      display: block;
+    }
+    #home .main_area {
+      width: 90%;
+    }
+    #home .main_area .main_txt p br {
+      display: none;
+    }
+    #home .main_area .main_txt p .hide {
+      display: block;
+    }
+
 }
 
 
@@ -20,7 +84,20 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
-
+  #home .main_area {
+    width: 100%;
+    padding: 0;
+  }
+  #home .main_area .main_txt p .hide {
+    display: none;
+  }
+  #home .main_area .down_area {
+    bottom: 0;
+  }
+  #about .about_wrap .about_contents_wrap .about_cont_right img {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 
@@ -28,7 +105,27 @@
 
 
 @media screen and (max-width:576px) {
-
+  #home .main_area {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  #home .main_area h2 {
+    font-size: 4.5rem;
+  }
+  #home .main_area .main_txt b {
+    font-size: 1.5rem;
+  }
+  #home .main_area .down_area {
+    bottom: 5%;
+    margin-left: 2%;
+  }
+  #home .main_area .down_area button {
+    padding: 10px 0;
+  }
+  #about .about_wrap .about_contents_wrap .about_cont_left p br{
+    display: none;
+  }
 }
 
 
@@ -36,12 +133,24 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
-
+    #home .main_area .down_area {
+      bottom: 0;
+      margin-left: 3%;
+    }
 }
 
 
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
-
+      #home .main_area {
+        top: 45%;
+      }
+      #home .main_area h2 {
+        font-size: 3.5rem;
+      }
+      #home .main_area .down_area {
+        bottom: -18%;
+        margin-left: 3%;
+      }
 }
