@@ -13,7 +13,9 @@ address {
 }
 
 
-
+#roadmap .roadmap_wrap .roadmap_box .rdm_box p {
+    padding: 0;
+}
 
 
 
@@ -42,7 +44,6 @@ address {
 
 
 /*모바일2*/
-
 
 @media screen and (max-width:576px) {}
 
