@@ -16,6 +16,14 @@
     margin-left: 2%;
   }
 
+  #Solution .inner .solution_img img{
+    margin-top:30%;
+  }
+
+  #Ecosystem .inner ul.top li{
+    padding: 0 35px;
+  }
+
 }
 
 
@@ -55,6 +63,29 @@
       margin-left: 5%;
       margin-top: 10%;
     }
+
+    #Market .inner .market_img{
+      padding: 100px 50px;
+    }
+  
+    #Ecosystem .inner ul.top li{
+      font-size: 16px;
+    }
+  
+
+    #contact .con_area {
+      width: 80%;
+    }
+    #contact .con_area .con_left h3 {
+      font-size: 1.7em;
+    }
+    #contact .con_area .con_left .gform {
+      margin-top: 10px;
+    }
+    
+    footer .footer_area img {
+      max-width: 85%;
+    }
 }
 
 
@@ -77,6 +108,120 @@
       display: block;
     }
 
+    #Market{
+      padding: 50px 0;
+    }
+
+    #Market .inner{
+      flex-direction: column-reverse;
+    }
+    
+    #Market .inner .market_img{
+      width: 100%;
+    }
+
+    #Market .inner .text{
+      width: 100%;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    #Market .inner .text h2{
+      padding-bottom: 30px;
+    }
+
+    #Solution{
+      height: 50%;
+      padding: 50px 0;
+    }
+
+    #Solution .inner{
+      display: block;
+    }
+
+    #Solution .inner .text{
+      width: 100%;
+      text-align: center;
+      padding: 50px 0 0;
+    }
+
+    #Solution .inner .text h2{
+      padding-bottom: 30px;
+    }
+
+    #Solution .inner .text p.bold{
+      padding-bottom: 0px;
+    }
+
+    #Solution .inner .solution_img{
+      /* border: 10px solid rgb(2, 221, 97); */
+      width: 100%;
+      padding-bottom: 50px;
+    }
+    #Solution .inner .solution_img img{
+      margin-top:0%;
+    }
+
+    #Ecosystem h2{
+      padding: 50px 0;
+    }
+
+
+    #Ecosystem .inner ul.top li{
+      font-size: 16px;
+    }
+
+    #Ecosystem .inner .bottom{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #Ecosystem .inner .bottom .Ecosystem_img{
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+    }
+
+    #Ecosystem .inner .bottom ul.percentage{
+      /* border: 5px solid rgb(70, 38, 38); */
+      width: 100%;
+      padding: 8% 0;
+    }
+    
+
+    #roadmap .roadmap_wrap .roadmap_box {
+      display: block;
+  }
+  #roadmap .roadmap_wrap .roadmap_box .rdm_box {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #roadmap .roadmap_wrap .roadmap_box .rdm_box .rdm_card {
+    margin-bottom: 7%;
+  }
+  #contact .con_area .con_left h3 {
+    margin-bottom: 20px;
+  }
+  #contact .con_area .con_left h3::after {
+    height: 3px;
+  }
+
+  /* footer */
+  footer .footer_area {
+    flex-direction: column;
+  }
+  footer .footer_area .white_pp {
+    width: 50%;
+    text-align: center;
+  }
+  .v-line {
+    transform: rotate(90deg);
+  }
+  footer .footer_area .footer_info_list {
+    width: 50%;
+  }
+
 }
 
 
@@ -97,6 +242,37 @@
   #about .about_wrap .about_contents_wrap .about_cont_right img {
     width: 100%;
     margin-left: 0;
+  }
+
+  #roadmap .roadmap_wrap .roadmap_box .rdm_box {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* contact */
+  #contact .con_area {
+    flex-direction: column;
+  }
+  #contact .con_area .con_left h3 {
+    text-align: center;
+  }
+  #contact .con_area .con_left h3::after {
+    height: 2px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  #contact .con_area .con_left {
+    width: 80%;
+  }
+  #contact .con_area .con_left form input.email {
+    margin-bottom: 3%;
+  }
+  #contact .con_area .con_right {
+    width: 65%;
+  }
+
+  footer .footer_area .white_pp {
+    width: 80%;
   }
 }
 
@@ -126,6 +302,10 @@
   #about .about_wrap .about_contents_wrap .about_cont_left p br{
     display: none;
   }
+
+  #Ecosystem .inner ul.top{
+    flex-direction: column;
+  }
 }
 
 
@@ -136,6 +316,41 @@
     #home .main_area .down_area {
       bottom: 0;
       margin-left: 3%;
+    }
+
+    footer .footer_area .white_pp {
+      width: 100%;
+    }
+
+    #Market .inner .text p{
+      font-size: 15px;
+    }
+
+    #Solution .inner .text p.normal{
+      font-size: 15px;
+    }
+
+    #Solution .inner .text p.bold{
+      font-size: 15px;
+    }
+
+    #Ecosystem{
+      height: 50%;
+      padding-bottom: 50px;
+    }
+
+    #Ecosystem .inner ul.top{
+      /* border: 5px solid grey; */
+      width: 100%;
+      padding-top: 25px;
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    #Ecosystem .inner .bottom ul.percentage li{
+      font-size: 15px;
     }
 }
 
