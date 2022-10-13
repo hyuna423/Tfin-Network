@@ -19,11 +19,15 @@ address {
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 
 
 h3 {
   font-size: 2.5em;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 30px;
   color: #222222;
 }
@@ -343,7 +347,7 @@ input[type="checkbox"] {
   text-align: center;
   text-shadow: 1px 1px 2px rgb(41, 41, 41);
 }
-#home .main_area .main_txt b {
+#home .main_area . b {
   font-size: 2rem;
   text-shadow: 1px 1px 2px rgb(41, 41, 41);
 }
@@ -432,6 +436,11 @@ input[type="checkbox"] {
   width: 50%;
 
 }
+
+#about .about_wrap .about_contents_wrap .about_cont_left p{
+  line-height: 2;
+}
+
 #about .about_wrap .about_contents_wrap .about_cont_right {
   width: 50%;
 }
@@ -445,43 +454,66 @@ input[type="checkbox"] {
   /* border: 10px solid red; */
   width: 100%;
   height: 100%;
-  background: url(../img/market_bg.png) no-repeat 0 50%;
   padding: 111px 0;
-  background-size: cover;
+  position: relative;
+
+}
+
+#Market::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../img/bgefect.png) no-repeat center;
+    position: absolute;
+    left: -35%;
+    bottom: -57%;
+    background-size: contain;
+    z-index: -1;
+}
+
+#Market::before{
+  content: "";
+  width: 2000px;
+  height: 2000px;
+  background: url(../img/bgefect.png) no-repeat center;
+  position: absolute;
+  right: -25%;
+  bottom: -120%;
+  background-size: contain;
+  z-index: -1;
 }
 
 #Market .inner{
-  /* border: 10px solid green; */
+  position: relative;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: 25px 4px 40px rgba(129, 120, 187, 0.2);
-  border-radius: 5px 200px 5px 200px;
+  border-radius: 5px 125px 5px 125px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:80px 0;
+
 }
 
 #Market .inner .market_img{
   /* border: 10px solid blue; */
   width: 50%;
   height: 100%;
-  padding: 59px 111px;
-  vertical-align: middle;
+  margin:0 auto;
 }
 
 #Market .inner .market_img img{
   /* border: 5px solid lightblue; */
-  max-width: 100%;
+  display:flex;
+  max-width:80%;
+  margin: 0 auto;
 }
 
 #Market .inner .text{
-  /* border: 10px solid magenta; */
-  width: 45%;
-  /* padding: 169px 0 0; */
-  /* padding-top: 15.65vh; */
+  width: 50%;
 }
 
 #Market .inner .text h2{
@@ -511,25 +543,49 @@ input[type="checkbox"] {
   /* border: 10px solid red; */
   width: 100%;
   height: 100%;
-  background: url(../img/Solution_bg.png)no-repeat 0 50%;
   padding: 183px 0;
+  position: relative;
+}
+
+#Solution::before{
+  content: " ";
+  width: 80%;
+  height: 25%;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  background:url(../img/TFIN\ NETWORK_bg.png)no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+#Solution::after{
+  content: "";
+  width: 580px;
+  height: 629.9px;
+  background: url(../img/bgefect.png) no-repeat;
+  position: absolute;
+  right: -5%;
+  bottom: -21%;
   background-size: cover;
+  z-index: -1;
 }
 
 #Solution .inner{
-  /* border: 10px solid green; */
+  position: relative;
+  z-index:1;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  /* overflow: hidden; */
-  background: rgba(255, 255, 255, 0.19);
+  background: rgba(255, 255, 255, .8);
   box-shadow: 8px 8px 38px -13px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
-  background-size: cover;
-
+  padding: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+
 }
 
 #Solution .inner .text{
@@ -550,18 +606,11 @@ input[type="checkbox"] {
 }
 
 #Solution .inner .text p.normal{
-  /* border: 5px solid darkcyan; */
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
   font-style: normal;
   color: #000;
 }
 
 #Solution .inner .text p.bold{
-  /* border: 5px solid rgb(255, 251, 41); */
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
   font-weight: 600;
   font-style: normal;
   color: #000;
@@ -589,6 +638,30 @@ input[type="checkbox"] {
   background: url(../img/Ecosystem_bg01.png) no-repeat 0 50%;
   background-size: cover;
   padding-bottom: 174px;
+  position: relative;
+}
+
+
+#Ecosystem::before{
+  content: "";
+  width: 2000px;
+  height: 2000px;
+  background: url(../img/bgefect.png) no-repeat center;
+  position: absolute;
+  left: -25%;
+  top: -20%;
+  background-size: contain;
+  z-index: -1;
+}
+
+#Ecosystem::after{
+  content:'';
+  width:1140px;
+  height:976px;
+  background:url(../img/Ecosystem_bg.png)no-repeat;
+  position:absolute;
+  bottom:-40%;
+  right: -20%;
 }
 
 #Ecosystem .inner{
@@ -658,13 +731,14 @@ input[type="checkbox"] {
 #Ecosystem .inner .bottom .Ecosystem_img{
   /* border: 5px solid midnightblue; */
   width: 50%;
-  padding-left: 9%;
   z-index: 2;
 }
 
 #Ecosystem .inner .bottom .Ecosystem_img img{
   /* border: 5px solid blueviolet; */
   max-width: 100%;
+  display:flex;
+  margin: 0 auto;
 }
 
 #Ecosystem .inner .bottom ul.percentage{
@@ -925,6 +999,9 @@ footer .footer_area {
   align-items: stretch;
 }
 
+footer .footer_area h1{
+  text-align: center;
+}
 /* white_pp */
 footer .footer_area .white_pp {
   width: 30%;
