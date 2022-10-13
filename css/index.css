@@ -363,13 +363,10 @@ input[type="checkbox"] {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  text-align: center;
-  
+  text-align: center;  
+  margin: 0 auto;
 }
+
 #home .main_area .down_area button {
   width: 40%;
   padding: 20px 0;
@@ -383,6 +380,9 @@ input[type="checkbox"] {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
+
+
+
 #home .main_area .down_area button:hover {
   background-position: 100% 0;
     -moz-transition: all .4s ease-in-out;

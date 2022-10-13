@@ -23,11 +23,6 @@
 }
 
 
-  #home .main_area .down_area {
-    width: 80%;
-    margin-left: 2%;
-  }
-
   #Solution .inner .solution_img img{
     margin-top:30%;
   }
@@ -57,9 +52,7 @@
       width: 90%;
       top: 50%;
     }
-    #home .main_area .down_area {
-      bottom: 10%;
-    }
+
     #about .about_wrap .about_contents_wrap {
       display: block;
     }
@@ -270,9 +263,7 @@
   #home .main_area .main_txt p .hide {
     display: none;
   }
-  #home .main_area .down_area {
-    bottom: 0;
-  }
+
   #about .about_wrap .about_contents_wrap .about_cont_right img {
     width: 100%;
     margin-left: 0;
@@ -346,10 +337,7 @@
   #home .main_area .main_txt b {
     font-size: 1.5rem;
   }
-  #home .main_area .down_area {
-    bottom: 5%;
-    margin-left: 2%;
-  }
+
   #home .main_area .down_area button {
     padding: 10px 0;
   }
@@ -399,10 +387,6 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
-    #home .main_area .down_area {
-      bottom: 0;
-      margin-left: 3%;
-    }
 
     footer .footer_area .white_pp {
       width: 100%;
@@ -442,8 +426,5 @@
       #home .main_area h2 {
         font-size: 3.5rem;
       }
-      #home .main_area .down_area {
-        bottom: -18%;
-        margin-left: 3%;
-      }
+
 }
