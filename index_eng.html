@@ -6,7 +6,7 @@
   <title>T-fin Netowrk</title>
 
   <!--meta-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="le=edge">
 
   <!--bootstrap-->
@@ -20,7 +20,9 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/moblie.css">
-  <link rel="stylesheet" href="css/index_eng.css">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
 
   <!--favicon--->
   <link href="img/favicon.ico" rel="icon">
@@ -31,6 +33,8 @@
   <script src="js/menu_scroll.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 </head>
 
 
@@ -98,19 +102,105 @@
 
   </header>
 
-<main>
 
-</main>
+  <main>
+    <section id="Market">
+      <div class="inner container">
+        <div class="market_img" data-aos="fade-right">
+          <img src="./img/market.png" alt="Market_intro">
+        </div>
+        <!-- //market_img -->
+        <div class="text">
+          <h2 data-aos="fade-left">Market</h2>
+          <p data-aos="fade-left">
+            TFIN NETWORK,<br>
+            which serves as the main currency of the TFIN NETWORK platform,<br>
+            supports a compensation system that uses TFIN NETWORK<br>
+            to providers and users who use global distribution services.<br>
+            A separate smart contract is applied to each unit,<br>
+            and the whole information is summed up and eventually leads to a reward.
+          </p>
+        </div>
+        <!-- //text -->
+      </div>
+      <!-- //inner -->
+    </section>
+    <!-- //Market -->
+
+    <section id="Solution">
+      <div class="inner container">
+        <div class="text" data-aos="fade-right">
+          <h2>Solution</h2>
+          <p class="bold">
+            A truly shared economy <br>that rationally distributes profits to consumers, sellers and manufacturers alike
+          </p>
+          <p class="normal">
+            Through global distribution partnerships,<br>
+            years of cross-border e-commerce experience, and Hong Kong's own logistics system,<br>
+            SNW Project was able to build an integrated and manageable system<br>
+            until the moment it was produced and delivered to customers.<br>
+            <br>
+            Based on this, the SNW Project creates a truly shared ecosystem<br>
+            that dramatically reduces unnecessary costs incurred by manufacturers,<br>
+            distributors, sellers, and consumers, and distributes profits reasonably.<br>
+          </p>
+          
+        </div>
+        <!-- //text -->
+        <div class="solution_img" data-aos="fade-left">
+          <img src="./img/solution.png">
+        </div>
+        <!-- //solution_img -->
+      </div>
+      <!-- //inner -->
+    </section>
+    <!-- //Solution -->
 
 
-<footer>
+    <section id="Ecosystem">
+      <h2 data-aos="fade-down" data-aos-duration="2000">Ecosystem</h2>
+      <div class="inner container">
+          <ul class="top" data-aos="fade-down">
+            <li>Coin name: TFIN NETWORK</li>
+            <li>Symbol: TFIN</li>
+            <li>Protocol: ERC20</li>
+            <li>Total supply: 300,000,000</li>
+          </ul>
 
-</footer>
+          <div class="bottom">
+          <div class="Ecosystem_img" data-aos="fade-up" data-aos-duration="4000">
+            <img src="./img/ecosystem.png">
+          </div>
+          <ul class="percentage" data-aos="fade-up">
+            <li>
+              <span></span>Token Sale : 10%
+            </li>
+            <li><span></span>Team : 10%</li>
+            <li><span></span>Global Distridution : 10%</li>
+            <li><span></span>Platform incentive payments: 20%</li>
+            <li><span></span>Platform Services: 50%</li>
+          </ul>
+        </div>
+        <!-- //solution_img -->
 
-<script>
-  AOS.init();
-</script>
 
+
+      </div>
+      <!-- //inner -->
+    </section>
+    <!-- //Ecosystem -->
+  </main>
+
+
+  <footer>
+
+  </footer>
+
+  <script>
+    AOS.init({
+      duration: 3000
+    });
+  </script>
 
 </body>
 

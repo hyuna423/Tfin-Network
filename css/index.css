@@ -37,3 +37,276 @@ h3 {
 
 
 /*헤더*/
+
+/* main */
+/* #Market */
+#Market{
+  /* border: 10px solid red; */
+  width: 100%;
+  height: 100%;
+  background: url(../img/market_bg.png) no-repeat 0 50%;
+  padding: 111px 0;
+  background-size: cover;
+}
+
+#Market .inner{
+  /* border: 10px solid green; */
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 25px 4px 40px rgba(129, 120, 187, 0.2);
+  border-radius: 5px 200px 5px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Market .inner .market_img{
+  /* border: 10px solid blue; */
+  width: 50%;
+  height: 100%;
+  padding: 59px 111px;
+  vertical-align: middle;
+}
+
+#Market .inner .market_img img{
+  /* border: 5px solid lightblue; */
+  max-width: 100%;
+}
+
+#Market .inner .text{
+  /* border: 10px solid magenta; */
+  width: 45%;
+  /* padding: 169px 0 0; */
+  /* padding-top: 15.65vh; */
+}
+
+#Market .inner .text h2{
+  /* border: 5px solid lightsalmon; */
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: normal;
+  padding-bottom: 44px;
+  color: #000;
+  display: block;
+}
+
+#Market .inner .text p{
+  /* border: 5px solid lightseagreen; */
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
+/* //#Market */
+
+
+/* #Solution */
+#Solution{
+  /* border: 10px solid red; */
+  width: 100%;
+  height: 100%;
+  background: url(../img/Solution_bg.png)no-repeat 0 50%;
+  padding: 183px 0;
+  background-size: cover;
+}
+
+#Solution .inner{
+  /* border: 10px solid green; */
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  /* overflow: hidden; */
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 8px 8px 38px -13px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Solution .inner .text{
+  /* border: 10px solid khaki; */
+  width: 50%;
+  height: 100%;
+  padding: 0;
+}
+
+#Solution .inner .text h2{
+  /* border: 5px solid darkblue; */
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: normal;
+  color: #000;
+  padding-bottom: 44px;
+}
+
+#Solution .inner .text p.normal{
+  /* border: 5px solid darkcyan; */
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
+
+#Solution .inner .text p.bold{
+  /* border: 5px solid rgb(255, 251, 41); */
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  color: #000;
+  padding-bottom: 40px;
+}
+
+#Solution .inner .solution_img{
+  /* border: 10px solid rgb(2, 221, 97); */
+  width: 50%;
+  height: 100%;
+}
+
+#Solution .inner .solution_img img{
+  /* border: 10px solid seagreen; */
+  max-width: 100%;
+}
+
+/* //#Solution */
+
+/* #Ecosystem */
+#Ecosystem{
+  /* border: 10px solid limegreen; */
+  width: 100%;
+  height: auto;
+  background: url(../img/Ecosystem_bg01.png) no-repeat 0 50%;
+  background-size: cover;
+  padding-bottom: 174px;
+}
+
+#Ecosystem .inner{
+  /* border: 10px solid orange; */
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 25px 15px 39px rgba(84, 86, 143, 0.25);
+  border-radius: 40px;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+#Ecosystem .inner::after{
+  content: "";
+  background: url(../img/Tfin-Network_logo3.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  width: 702px;
+  height: 702px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#Ecosystem h2{
+  /* border: 5px solid maroon; */
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: normal;
+  color: #000;
+  padding: 107px 0 77px;
+
+}
+
+#Ecosystem .inner ul.top{
+  /* border: 5px solid grey; */
+  width: 100%;
+  padding-top: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#Ecosystem .inner ul.top li{
+  /* border: 3px solid hotpink; */
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  color: #000;
+}
+
+#Ecosystem .inner .bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Ecosystem .inner .bottom .Ecosystem_img{
+  /* border: 5px solid midnightblue; */
+  width: 50%;
+  padding-left: 9%;
+  z-index: 2;
+}
+
+#Ecosystem .inner .bottom .Ecosystem_img img{
+  /* border: 5px solid blueviolet; */
+  max-width: 100%;
+}
+
+#Ecosystem .inner .bottom ul.percentage{
+  /* border: 5px solid rgb(70, 38, 38); */
+  width: 50%;
+  height: 100%;
+  padding: 8% 0;
+}
+
+#Ecosystem .inner .bottom ul.percentage li{
+  /* border: 5px solid rgb(131, 129, 129); */
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  display: flex;
+  align-items: center;
+  line-height: 3;
+  padding-left: 30px;
+}
+
+#Ecosystem .inner .bottom ul.percentage li span{
+  width: 40px;
+  height: 40px;
+  background-color: #D452CE;
+  display: block;
+  margin-right: 32px;
+  border-radius: 5px;
+}
+
+#Ecosystem .inner .bottom ul.percentage li:nth-child(2) span{
+  background-color: #9B5EFF; 
+}
+
+#Ecosystem .inner .bottom ul.percentage li:nth-child(3) span{
+  background-color: #4686FF; 
+}
+
+#Ecosystem .inner .bottom ul.percentage li:nth-child(4) span{
+  background-color: #38D6A6; 
+}
+
+#Ecosystem .inner .bottom ul.percentage li:nth-child(5) span{
+  background-color: #F55D71; 
+}

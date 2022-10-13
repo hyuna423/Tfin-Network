@@ -1,18 +1,116 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+  #Solution .inner .solution_img img{
+    margin-top:30%;
+  }
+
+  #Ecosystem .inner ul.top li{
+    padding: 0 35px;
+  }
+
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    #Market .inner .market_img{
+      padding: 100px 50px;
+    }
+  
+    #Ecosystem .inner ul.top li{
+      font-size: 16px;
+    }
+  
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    #Market{
+      padding: 50px 0;
+    }
+
+    #Market .inner{
+      flex-direction: column-reverse;
+    }
+    
+    #Market .inner .market_img{
+      width: 100%;
+    }
+
+    #Market .inner .text{
+      width: 100%;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    #Market .inner .text h2{
+      padding-bottom: 30px;
+    }
+
+    #Solution{
+      height: 50%;
+      padding: 50px 0;
+    }
+
+    #Solution .inner{
+      display: block;
+    }
+
+    #Solution .inner .text{
+      width: 100%;
+      text-align: center;
+      padding: 50px 0 0;
+    }
+
+    #Solution .inner .text h2{
+      padding-bottom: 30px;
+    }
+
+    #Solution .inner .text p.bold{
+      padding-bottom: 0px;
+    }
+
+    #Solution .inner .solution_img{
+      /* border: 10px solid rgb(2, 221, 97); */
+      width: 100%;
+      padding-bottom: 50px;
+    }
+    #Solution .inner .solution_img img{
+      margin-top:0%;
+    }
+
+    #Ecosystem h2{
+      padding: 50px 0;
+    }
+
+
+    #Ecosystem .inner ul.top li{
+      font-size: 16px;
+    }
+
+    #Ecosystem .inner .bottom{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #Ecosystem .inner .bottom .Ecosystem_img{
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+    }
+
+    #Ecosystem .inner .bottom ul.percentage{
+      /* border: 5px solid rgb(70, 38, 38); */
+      width: 100%;
+      padding: 8% 0;
+    }
+    
+
 }
 
 
@@ -28,7 +126,9 @@
 
 
 @media screen and (max-width:576px) {
-
+  #Ecosystem .inner ul.top{
+    flex-direction: column;
+  }
 }
 
 
@@ -36,7 +136,36 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
+    #Market .inner .text p{
+      font-size: 15px;
+    }
 
+    #Solution .inner .text p.normal{
+      font-size: 15px;
+    }
+
+    #Solution .inner .text p.bold{
+      font-size: 15px;
+    }
+
+    #Ecosystem{
+      height: 50%;
+      padding-bottom: 50px;
+    }
+
+    #Ecosystem .inner ul.top{
+      /* border: 5px solid grey; */
+      width: 100%;
+      padding-top: 25px;
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    #Ecosystem .inner .bottom ul.percentage li{
+      font-size: 15px;
+    }
 }
 
 
